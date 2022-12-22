@@ -15,7 +15,7 @@ class MahasiswaController extends Controller
 
         return response()->json(
             $data = [
-                'data' => $mahasiswa,
+                'data' => $mahasiswa
 
             ]
         );
