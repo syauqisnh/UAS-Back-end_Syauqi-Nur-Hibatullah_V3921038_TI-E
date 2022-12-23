@@ -20,12 +20,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 // Contoh menggunakan Route
-// Route::post('/mahasiswa', [MahasiswaController::class, 'store']);
-// Route::put('/mahasiswa/{id}',[MahasiswaController::class, 'update']);
-// Route::get('/mahasiswa/{id}',[MahasiswaController::class, 'show']);
-// Route::get('/mahasiswa',[MahasiswaController::class, 'index']);
-// Route::delete('/mahasiswa/{id}',[MahasiswaController::class, 'destroy']);
-Route::apiResource('mahasiswa',MahasiswaController::class);
+Route::post('/mahasiswa', [MahasiswaController::class, 'store']);
+Route::put('/mahasiswa/{id}',[MahasiswaController::class, 'update']);
+Route::get('/mahasiswa/{id}',[MahasiswaController::class, 'show']);
+Route::get('/mahasiswa',[MahasiswaController::class, 'index']);
+Route::delete('/mahasiswa/{id}',[MahasiswaController::class, 'destroy']);
+// Route::apiResource('mahasiswa',MahasiswaController::class);
 
 
 
